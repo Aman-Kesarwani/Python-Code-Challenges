@@ -4,8 +4,10 @@ def filter_undivisble_by_3(number):
     if number %3 != 0:
         return number
 
+print("List: {0}".format(numbers))
+
 filtered_by_function_list = list(filter(filter_undivisble_by_3, numbers))
-print(filtered_by_function_list)
+print("filtered_by_function_list = {0}".format(filtered_by_function_list))
 
 filtered_by_lambda_list = list(filter(lambda x: x%3 !=0, numbers))
-print(filtered_by_lambda_list)
+print("filtered_by_lambda_list = {0}".format(filtered_by_lambda_list))
